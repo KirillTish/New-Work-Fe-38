@@ -1,0 +1,21 @@
+.footer {
+    padding: 24px 0;
+    background: #2C3154;
+}
+.footer-text {
+    width: 370px;
+    margin: auto;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(128, 128, 128, 1);
+    text-align: center;
+    span {
+        color: rgba(255, 255, 255, 1);
+    }
+    @media (max-width: 500px) {
+        width: 280px;
+      }
+}

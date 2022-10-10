@@ -1,0 +1,115 @@
+.people-card {
+    padding: 115px 0;
+}
+.people-card-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    @media (max-width: 1000px) {
+        justify-content: space-around;
+      }
+}
+.people-card-item {
+    width: 250px;
+    @media (max-width: 1200px) {
+        width: 230px;
+      }
+      @media (max-width: 1000px) {
+        width: 260px;
+        margin-bottom: 40px;
+        &:nth-child(n+3) {
+          margin-bottom: 0;
+        }
+      }
+      @media (max-width: 600px) {
+        &:nth-child(3) {
+          margin-bottom: 40px;
+        }
+      }
+}
+.people-card-img {
+    margin-bottom: 30px;
+    @media (max-width: 998px) {
+        margin-bottom: 25px;
+      }
+
+}
+.people-card-img img {
+    width: 260px;
+    height: 250px;
+    @media (max-width: 1200px) {
+        width: 230px;
+        height: 230px;
+      }
+      @media (max-width: 998px) {
+        width: 250px;
+        height: 250px;
+      }
+}
+
+.information {
+}
+span {
+    display: block;
+}
+#name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    @media (max-width: 1000px) {
+        font-size: $_18px;
+      }
+}
+#job {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FF4343;
+    margin-bottom: 20px;
+    @media (max-width: 1000px) {
+        font-size: $_14px;
+      }
+}
+
+.people-card-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    color: #6C7279;
+    margin-bottom: 40px;
+    @media (max-width: 1000px) {
+        font-size: $_14px;
+      }
+}
+.list-team {
+    display: flex;
+    &__icon {
+        width: 39px;
+        height: 39px;
+        border: 1px solid #C6CBCD;
+        margin-right: 5px;
+        &:hover {
+          position: relative;
+          bottom: 10px;
+          cursor: pointer;
+          box-shadow: 0 0 15px 0 rgb(128, 128, 128, 0.5);
+        }
+          }
+}
+.fa-brands {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #C6CBCD;
+    transition: 0.3s;
+}
